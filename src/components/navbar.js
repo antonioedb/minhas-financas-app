@@ -1,12 +1,18 @@
 import React from "react";
 import NavbarItem from "./navbarItem";
+import AuthService from "../app/service/authService";
+//import { AuthConsumer } from "../main/provedorAuthenticacao";
+
+const deslogar = () => {
+    AuthService.removerUsurioAutenicado();
+}
 
 
-function Navbar(){
+function Navbar(props){
     return(
         <div className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
             <div className="container">
-                <a href="https://bootswatch.com/" className="navbar-brand">Minhas Finanças</a>
+                <a href="/home" className="navbar-brand">Minhas Finanças</a>
                 <button className="navbar-toggler" type="button" 
                         data-toggle="collapse" data-target="#navbarResponsive" 
                         aria-controls="navbarResponsive" aria-expanded="false" 
@@ -17,17 +23,26 @@ function Navbar(){
                     <ul className="navbar-nav">
                         <NavbarItem href="/home" label="Home" />
                         <NavbarItem href="/cadastro-usuario" label="Usuários" />
-                        <NavbarItem href="/" label="Lançamentos" />
-                        <NavbarItem href="/login" label="Login" />
+                        <NavbarItem href="/consulta-lancamentos" label="Lançamentos" />
+                        <NavbarItem onClick={deslogar} href="/login" label="Sair" />
                     </ul>
 
                 </div>
             </div>
         </div>
-
+ 
     )
 
 
 }
 
 export default Navbar
+
+
+//export default () => (
+//    <AuthConsumer>
+//        {(context) => (
+//            <Navbar deslogar={context.encerrarSessao}/>
+//        )}
+//    </AuthConsumer>
+//)
