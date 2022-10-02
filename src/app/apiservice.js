@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const httpClient = axios.create({
-    baseURL: 'https://antonioelias-financas.herokuapp.com/'
+    baseURL: 'https://antonioelias-financas.herokuapp.com'
 })
 
 class ApiService {
