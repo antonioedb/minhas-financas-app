@@ -9,6 +9,8 @@ import FormGroup from "../components/form-group"
 import UsuarioService from '../app/service/usuarioService'
 import {mensagemSucesso,mensagemErro} from '../components/toastr'
 
+import { AuthContext } from "../main/provedorAuthenticacao";
+
 class CadastroUsuario extends React.Component{
 
     state = {
@@ -103,5 +105,7 @@ class CadastroUsuario extends React.Component{
     }
 
 }
+
+CadastroUsuario.contextType = AuthContext
 
 export default withRouter(CadastroUsuario)
