@@ -11,7 +11,7 @@ import {mensagemSucesso,mensagemErro} from '../components/toastr'
 
 import { AuthContext } from "../main/provedorAuthenticacao";
 
-class CadastroUsuario extends React.Component{
+class CadastroUsuarios extends React.Component{
 
     state = {
         nome: '',
@@ -106,6 +106,6 @@ class CadastroUsuario extends React.Component{
 
 }
 
-CadastroUsuario.contextType = AuthContext
+CadastroUsuarios.contextType = AuthContext
 
-export default withRouter(CadastroUsuario)
+export default withRouter(CadastroUsuarios)
