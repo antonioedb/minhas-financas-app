@@ -1,9 +1,9 @@
 import React from 'react';
-import Rotas from '../rotas';
-import ProvedorAuthenticacao from '../provedorAuthenticacao';
+import Rotas from '../main/rotas';
+import ProvedorAuthenticacao from '../main/provedorAuthenticacao';
+import Navbar from "../components/navbar"
 
 import 'bootswatch/dist/cosmo/bootstrap.css'
-import Navbar from "../components/navbar"
 import 'toastr/build/toastr.min.js'
 import '../custom.css'
 import 'toastr/build/toastr.css';
