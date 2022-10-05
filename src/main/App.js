@@ -1,6 +1,6 @@
 import React from 'react';
-import Rotas from './rotas';
-import ProvedorAuthenticacao from './provedorAuthenticacao';
+import Rotas from '../rotas';
+import ProvedorAuthenticacao from '../provedorAuthenticacao';
 
 import 'bootswatch/dist/cosmo/bootstrap.css'
 import Navbar from "../components/navbar"
