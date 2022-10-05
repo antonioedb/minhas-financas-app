@@ -1,6 +1,6 @@
 import React from "react"
 import Login from "../views/login"
-import CadastroUsuario from '../views/cadastroUsuario'
+//import CadastroUsuario from '../views/cadastroUsuario'
 import Home from '../views/home'
 import ConsultaLancamentos from '../views/lancamentos/consultaLancamentos'
 import CadastroLancamentos from "../views/lancamentos/cadastroLancamentos"
@@ -39,7 +39,7 @@ function Rotas(props){
             <Switch>
                 
                 <Route exact path="/login" component={Login} />
-                <Route exact path="/cadastro-usuario" component={CadastroUsuario} />
+                
 
                 <RotaAutenticada isUsuarioAutenticado={AuthService.isUsuarioAutenticado()} exact path="/home" component={Home} />
                 <RotaAutenticada isUsuarioAutenticado={AuthService.isUsuarioAutenticado()} exact path="/consulta-lancamentos" component={ConsultaLancamentos} />
