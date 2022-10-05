@@ -22,7 +22,7 @@ function Navbar(props){
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav">
                         <NavbarItem href="/home" label="Home" />
-                        <NavbarItem href="/cadastro-usuario" label="Usuários" />
+                        
                         <NavbarItem href="/consulta-lancamentos" label="Lançamentos" />
                         <NavbarItem onClick={deslogar} href="/login" label="Sair" />
                     </ul>
