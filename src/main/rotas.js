@@ -1,6 +1,6 @@
 import React from "react"
 import Login from "../views/login"
-import CadastroUsuario from "../views/cadastroUsuario"
+//import CadastroUsuario from "../views/cadastroUsuario"
 import Home from '../views/home'
 import ConsultaLancamentos from '../views/lancamentos/consultaLancamentos'
 import CadastroLancamentos from "../views/lancamentos/cadastroLancamentos"
